@@ -1,9 +1,7 @@
-main:
-  - title: "Posts"
-    url: /posts/
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/
-  - title: "About"
-    url: /about/
+docs:
+  - title: How to Build a Jekyll Site From Start to Finish
+    children:
+      - title: "Introduction to Jekyll"
+        url: /introduction-to-jekyll
+      - title: "Installing Jekyll"
+        url: /installing-jekyll
