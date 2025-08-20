@@ -1,4 +1,8 @@
 docs:
+  - title: Introduction
+    children:
+      - title: "Welcome"
+        url: /
   - title: How to Build a Jekyll Site From Start to Finish
     children:
       - title: "Introduction to Jekyll"
