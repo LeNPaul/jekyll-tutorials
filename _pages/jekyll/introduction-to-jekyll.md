@@ -17,41 +17,41 @@ What makes Jekyll useful as a static website generator is that it is able to gen
 
 Although static websites do not have backend server-side scripting or databases, it is still possible to utilize other services that offer features such as commenting, where your static website is making API requests to other backend web servers that manage the service for you. In many cases, this is more than enough for the majority of use cases.
 
-# Key Features of Jekyll
+## Key Features of Jekyll
 
-##  Markdown Text Formatting
+###  Markdown Text Formatting
 
 Page content is written in Markdown—a simple and popular way to format plain text—which is then automatically converted to HTML with the correct styling. Markdown is a widely used standard and allows for easy migration of content from other platforms. Markdown is essentially plain text, meaning you can store your content in a non-proprietary manner.
 
-## Liquid Templating
+### Liquid Templating
 
 Reusable layouts are built using Liquid, which is a template language used to dynamically generate pages with repeatable sections such as headers and footers. Variables can also be defined, allowing configuration changes to be applied everywhere.
 
-## Sass Support
+### Sass Support
 
 Sass is a CCS preprocessor that supplements CSS with useful features, such as using variables and building reusable style sheets.
 
-## Jekyll Plugins
+### Jekyll Plugins
 
 For features that are not directly included with Jekyll, there is a large repository of Jekyll plugins that provide many features not available out of the box with Jekyll, such as 
 
-# Ideal Use Cases
+## Ideal Use Cases
 
 Generally, Jekyll can be leveraged anytime you need a static website. The following are some ideas on where Jekyll can be used.
 
-## Blogs and Portfolios 
+### Blogs and Portfolios 
 
 Jekyll is blog-aware, meaning it was built with blogging in mind. You can easily generate blog pages with your content and display your blog posts in a wide variety of ways. You can also forgo the blog-specific features of Jekyll is simply create a standard portfolio website.
 
-## Websites
+### Websites
 
 Jekyll can be used build websites that don't typically require a database, such as personal or business websites. Jekyll is perfect for small organizations or business, but can also power larger sites as well. Due to the simple but fast nature of static websites, it may be ideal for websites that have a lot of traffic.
 
-## Project Documentation
+### Project Documentation
 
 Jekyll was created by the co-founder and former CEO of GitHub, and has its roots in software development. Many software projects use Jekyll to generate project documentation. GitHub Pages, which was created for this purposes, uses Jekyll.
 
-# Why Jekyll?
+## Why Jekyll?
 
 Jekyll is still relevant. Although there has been a freeze announced on the repository, releases are still being made to address bug fixes. Part of the beauty of Jekyll is that it is simple, and does exactly what it needs to do. There is no real need for significant changes to something that already works really well, and there is value in simplicity. In addition, Jekyll plugins can be used to add features that are not included with Jekyll. More importantly, GitHub continues to use Jekyll though GitHub Pages, which is widely used and even provides free web hosting, meaning Jekyll is not going anywhere soon.
 
