@@ -9,3 +9,5 @@ docs:
         url: /introduction-to-jekyll
       - title: "Installing Jekyll"
         url: /installing-jekyll
+      - title: "Create a Simple Jekyll Site"
+        url: /create-simple-jekyll-site
