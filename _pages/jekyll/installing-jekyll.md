@@ -23,7 +23,23 @@ You’ll be using the terminal frequently to install dependencies, run jekyll se
 
 2. **Windows:** PowerShell works fine, but Git Bash or Windows Subsystem for Linux (WSL) is often better.
 
-## Requirements
+### Git
+
+Git is a version control system that helps you track changes to your site, roll back if something breaks, and collaborate with others. You can find guides for installing on macOS, Linux, and Windows on [the official Git website](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+
+### GitHub
+
+GitHub is an online platform for hosting your Git repositories and makes deploying Jekyll sites extremely easy. GitHub offers the following benefits:
+
+- Free hosting with GitHub Pages
+
+- Integrated with Jekyll (GitHub will automatically build and serve your site)
+
+- Great for collaboration if multiple people work on the site
+
+To get started with GitHub, you will only need to [create an account](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github) for now.
+
+### Jekyll Requirements
 
 The following is a list of everything needed to install and run Jekyll:
 
