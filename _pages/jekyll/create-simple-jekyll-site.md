@@ -55,7 +55,7 @@ Since we made changes to the `_config.yml` file, you will need to restart your J
 
 ## Adding Blog Posts
 
-Blog posts go inside the `_posts/` directory. There should already be a sample blog post in the `_posts/` directory with a filename format of:
+Blog posts go inside the `_posts/` directory. There should already be a sample blog post in the `_posts/` directory, but we are going to create a new blog post with a filename format of:
 
 ```bash
 YEAR-MONTH-DAY-title.md
@@ -67,7 +67,7 @@ Example:
 2025-08-30-hello-world.md
 ```
 
-Open the file in your IDE, and add the configuration, called the front matter, and the top of file:
+Open the file in your IDE, and add the front matter (how blog posts are configured) at the top of file:
 
 ```yaml
 ---

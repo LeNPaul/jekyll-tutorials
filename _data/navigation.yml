@@ -11,3 +11,5 @@ docs:
         url: /installing-jekyll
       - title: "Create a Simple Jekyll Site"
         url: /create-simple-jekyll-site
+      - title: "Anatomy of a Jekyll Site"
+        url: /anatomy-jekyll-site
