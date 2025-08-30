@@ -5,15 +5,11 @@ title: "Create a Simple Jekyll Site"
 
 Once we have Jekyll installed, we can now create a simple Jekyll site. The goal here is to generate a simple but useful Jekyll site to use as a starter for learning the basics of how to work with Jekyll. We will cover the following topics:
 
-1. Generating a starter Jekyll site
+1. Generate Starter Site
 
-2. Configuring your site (i.e. site name, author, etc.)
+2. Configuring Your Site
 
-3. Adding blog posts
-
-4. Creating and modifying pages
-
-5. Modifying page layouts
+3. Adding Blog Posts
 
 ## Generate Starter Site
 
@@ -41,34 +37,44 @@ Build the site and serve it on your local server:
 bundle exec jekyll serve
 ```
 
+Jekyll will compile the site and serve it at `http://localhost:4000`. With the exception of `_config.yml`, any changes you make to the files will automatically be reflected.
+
 ## Configuring Your Site
 
-When you run `jekyll new myblog`, Jekyll creates a starter site with a standard set of files and directories:
+When you run `jekyll new myblog`, Jekyll scaffolds a starter site for you. Configuring it properly is the first step to making it your own. Before we go into depth with all of the files and directories generated, we will start with basic configuration.
 
-### _config.yml
+Open `_config.yml` in your editor and try changing these fields:
 
-The main configuration file. You’ll edit this to change things like your site’s title, author, description, and theme.
+```yaml
+title: <your site title>
+email: <your-email@example.com>
+description: <your description>
+```
 
-### _posts/
+Since we made changes to the `_config.yml` file, you will need to restart your Jekyll server for the changes to be applied. You can stop the Jekyll server with `CRTL + C` and run `bundle exec jekyll serve` again.
 
-Contains your blog posts. Each post is a Markdown file where the name is structured as `YEAR-MONTH-DAY-title.md`.
+## Adding Blog Posts
 
-### _layouts/
+Blog posts go inside the `_posts/` directory. There should already be a sample blog post in the `_posts/` directory with a filename format of:
 
-Holds templates that define the overall structure of pages. For example, `default.html` wraps around all pages, and `post.html` defines how blog posts look.
+```bash
+YEAR-MONTH-DAY-title.md
+```
 
-### _includes/
+Example:
 
-Stores reusable snippets (such as a navigation bar or footer) that you can insert into layouts with Liquid tags.
+```bash
+2025-08-30-hello-world.md
+```
 
-### _site/
+Open the file in your IDE, and add the configuration, called the front matter, and the top of file:
 
-This is the output directory. When you run `jekyll build`, Jekyll takes your source files, processes them through layouts, and generates the final static HTML site here. Note: You should not edit files in `_site` directly because they are regenerated each time you build the site.
+```yaml
+---
+layout: post
+title: "Hello World"
+date: 2025-08-30
+---
+```
 
-### index.md
-
-The homepage of your site. By default, this is a Markdown file that uses a layout template.
-
-### Gemfile
-
-Lists Ruby gems (dependencies) your project uses, including Jekyll and plugins.
+Write some [Markdown](https://www.markdownguide.org/) content below the front matter. Jekyll will automatically update your site and serve it at `http://localhost:4000`.
