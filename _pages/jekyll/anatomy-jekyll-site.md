@@ -32,3 +32,23 @@ The homepage of your site. By default, this is a Markdown file that uses a layou
 ### Gemfile
 
 Lists Ruby gems (dependencies) your project uses, including Jekyll and plugins.
+
+### _data/
+
+A place for YAML, JSON, or CSV files that provide structured data. These files are accessible in your templates via `site.data`.
+
+### _drafts/
+
+Stores unpublished posts. Drafts won’t appear on your site unless you run Jekyll with the `--drafts` flag or move them into `_posts/`.
+
+### _sass/
+
+Contains Sass partials that get imported into your main stylesheet. This keeps your styles modular and easier to maintain.
+
+### assets/
+
+Holds images, stylesheets, JavaScript, and other static files that your site uses.
+
+### _plugins/
+
+Custom Ruby plugins that extend Jekyll’s functionality, such as generators and filters.
