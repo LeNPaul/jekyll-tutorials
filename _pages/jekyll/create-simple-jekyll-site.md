@@ -11,7 +11,7 @@ Once we have Jekyll installed, we can now create a simple Jekyll site. The goal 
 
 3. Adding Blog Posts
 
-4. Updating Pages
+4. Updating and Adding Pages
 
 ## Generate Starter Site
 
@@ -81,6 +81,20 @@ date: 2025-08-30
 
 Write some [Markdown](https://www.markdownguide.org/) content below the front matter. Jekyll will automatically update your site and serve it at `http://localhost:4000`. Posts are part of the blog feed and often show up in a list on the home page.
 
-## Updating Pages
+## Updating and Adding Pages
 
 Pages usually live in the root directory (e.g., `about.md`) and are for timeless content. They don’t have dates, and you control where they appear via navigation links. Open the `about.markdown` file in the root directory and try editing the Markdown content below the front matter. Once again, Jekyll automatically updates your site. The updated page should now be accessible at `http://localhost:4000/about`.
+
+To add a page:
+
+Create a file `<your file name>.md` in the root directory with this front matter:
+
+```yaml
+---
+layout: page
+title: <your page title>
+permalink: /<you page path>
+---
+```
+
+Write your content below. It will now be accessible at `http://localhost:4000/<you page path>`.
