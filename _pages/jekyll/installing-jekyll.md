@@ -1,54 +1,102 @@
 ---
-permalink: /installing-jekyll
-title: "Installing Jekyll"
+permalink: /getting-started-jekyll
+title: "Getting Started with Jekyll"
 ---
 
-## Setting Up Your Development Environment
+In this module, you’ll set up Jekyll on your machine, create your very first site, and explore how Jekyll organizes a project. By the end, you’ll have a working local development environment where you can view your site in the browser.
 
-To make working with Jekyll smoother, you’ll want a development environment that includes:
+## Setup & Installation
 
-### Code Editor/IDE
+Before working with Jekyll, you’ll need to install some dependencies.
 
-While you can edit files with any text editor, using a modern IDE makes the process easier. At a minimum, ensure your editor has syntax highlighting for Markdown, HTML, YAML, and Ruby:
+### Installing Ruby & RubyGems
 
-1. **VS Code (recommended):** Free, lightweight, and has extensions for Markdown, Git, and Ruby.
+Jekyll is built with Ruby, so you must have Ruby installed. Most systems (macOS and Linux) already come with Ruby pre-installed, but it’s recommended to install the latest stable version. RubyGems (Ruby’s package manager) is included with Ruby, so no extra steps are required.
 
-2. **Sublime Text:** Fast and simple, with good plugin support.
+### macOS
 
-### Terminal/Command Line
+Use Homebrew
 
-You’ll be using the terminal frequently to install dependencies, run jekyll serve, and deploy your site.
+```bash
+brew install ruby
+```
 
-1. **macOS/Linux:** Use the built-in terminal.
+### Linux (Ubuntu/Debian)
 
-2. **Windows:** PowerShell works fine, but Git Bash or Windows Subsystem for Linux (WSL) is often better.
+```bash
+sudo apt-get install ruby-full build-essential zlib1g-dev
+```
 
-### Git
+### Windows
 
-Git is a version control system that helps you track changes to your site, roll back if something breaks, and collaborate with others. You can find guides for installing on macOS, Linux, and Windows on [the official Git website](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+Install Ruby via the RubyInstaller
 
-### GitHub
+### Installing Jekyll & Bundler
 
-GitHub is an online platform for hosting your Git repositories and makes deploying Jekyll sites extremely easy. GitHub offers the following benefits:
+With Ruby ready, install Jekyll (the static site generator) and Bundler (manages Ruby gem dependencies for your project) gems globally:
 
-- Free hosting with GitHub Pages
+```bash
+gem install jekyll bundler
+```
 
-- Integrated with Jekyll (GitHub will automatically build and serve your site)
+### Verifying Installation
 
-- Great for collaboration if multiple people work on the site
+Check if everything is installed correctly:
 
-To get started with GitHub, you will only need to [create an account](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github) for now.
+```bash
+jekyll -v
+bundle -v
+```
 
-### Jekyll Requirements
+If you see version numbers, you’re ready to move on.
 
-The following is a list of everything needed to install and run Jekyll:
+## First Jekyll Site
 
-1. **Ruby:** Jekyll is built using the Ruby programming language
+Now let’s create your first Jekyll site and learn how the project is structured.
 
-2. **RubyGems:** Jekyll itself is a Ruby gem, which is Ruby code that has been packaged into a self-contained project, so you will need the RubyGems package manager to install Jekyll
+### Creating a New Jekyll Site
 
-3. **GCC and Make:** Compilers for compiling Ruby code
+Run:
 
-4. **Bundler:** Technically optional, Bundler is a Ruby gem that is used to install all of the gems in your Gemfile, a file that contains a list of all of the gems needed to run your Jekyll site—we will cover this in more detail later on
+```bash
+jekyll new mysite
+cd mysite
+```
 
-To install all of the requirements, please reference [the Installation page on the official Jekyll site](https://jekyllrb.com/docs/installation/), which already offers comprehensive instruction.
+This will generate a starter site with the necessary files and folders.
+
+### Understanding the Project Structure
+
+Inside the new folder, you’ll see something like this:
+
+`_config.yml` – The main configuration file (site settings, metadata, plugins).
+
+`_layouts/` – Templates that define the overall structure of pages (e.g., default, post).
+
+`_includes/` – Reusable snippets (like headers, footers, navigation menus).
+
+`_posts/` – Blog posts, stored with filenames in the format YYYY-MM-DD-title.md.
+
+`_data/` – YAML, JSON, or CSV files to store structured data for use across the site.
+
+`assets/` – Static files such as images, CSS, and JavaScript.
+
+`index.md` – The home page of your site.
+
+`Gemfile` – Defines Ruby gem dependencies for your project.
+
+### Running the Local Development Server
+
+Start your server with:
+
+```bash
+bundle exec jekyll serve
+```
+
+By default, your site will be available at http://localhost:4000.
+
+### Understanding `_site`
+
+When you build or serve your project, Jekyll generates a `_site` folder. This is the compiled output—the HTML, CSS, and JS that will be deployed to the web server. You normally don’t edit files in _site, since it’s regenerated automatically every time you build.
+
+Congratulations! You’ve just set up your first Jekyll site and seen it running locally.
