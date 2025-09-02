@@ -1,6 +1,6 @@
 ---
-permalink: /introduction-static-site-generators-jekyll
-title: "Introduction to Static Site Generators & Jekyll"
+permalink: /introduction-jekyll
+title: "Introduction to Jekyll"
 ---
 
 ### What is a static site generator?  

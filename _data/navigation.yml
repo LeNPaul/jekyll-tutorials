@@ -6,6 +6,8 @@ docs:
   - title: Introduction to Jekyll
     children:
       - title: "Introduction to Static Site Generators & Jekyll"
-        url: /introduction-static-site-generators-jekyll
+        url: /introduction-jekyll
       - title: "Getting Started with Jekyll"
         url: /getting-started-jekyll
+      - title: "Working with Jekyll Basics"
+        url: /jekyll-basics
