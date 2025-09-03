@@ -1,6 +1,6 @@
 ---
-permalink: /getting-started-jekyll
-title: "Getting Started with Jekyll"
+permalink: /creating-first-jekyll-site
+title: "Creating Your First Jekyll Site"
 ---
 
 In this module, you’ll set up Jekyll on your machine, create your very first site, and explore how Jekyll organizes a project. By the end, you’ll have a working local development environment where you can view your site in the browser.

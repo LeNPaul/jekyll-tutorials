@@ -3,11 +3,13 @@ docs:
     children:
       - title: "Welcome"
         url: /
-  - title: Introduction to Jekyll
+  - title: Getting Started with Jekyll
     children:
-      - title: "Introduction to Static Site Generators & Jekyll"
+      - title: "Introduction to Jekyll"
         url: /introduction-jekyll
-      - title: "Getting Started with Jekyll"
-        url: /getting-started-jekyll
-      - title: "Working with Jekyll Basics"
-        url: /jekyll-basics
+      - title: "Creating Your First Jekyll Site"
+        url: /creating-first-jekyll-site
+      - title: "Configuration Basics"
+        url: /configuration-basics
+      - title: "Working with Content"
+        url: /working-with-content

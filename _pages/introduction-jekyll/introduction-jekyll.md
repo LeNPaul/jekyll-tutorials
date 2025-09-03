@@ -3,6 +3,12 @@ permalink: /introduction-jekyll
 title: "Introduction to Jekyll"
 ---
 
+### What is Jekyll?
+**Jekyll** is a static site generator created by Tom Preston-Werner, co-founder of GitHub. It transforms Markdown, Liquid templates, and configuration files into a full static website. Jekyll is particularly popular because:  
+- It integrates seamlessly with GitHub Pages.  
+- It is customizable through themes, layouts, and plugins.  
+- It is lightweight and straightforward, suitable for developers and technical writers.  
+
 ### What is a static site generator?  
 A **static site generator (SSG)** is a tool that converts plain text files (commonly written in Markdown) and templates into a complete static website composed of HTML, CSS, and JavaScript. Unlike dynamic content management systems (CMS) such as WordPress, which generate pages on demand using a database, static sites are pre-built and served directly to the browser.  
 
@@ -20,15 +26,13 @@ A **static site generator (SSG)** is a tool that converts plain text files (comm
 
 In summary, static sites provide speed, simplicity, and security, while dynamic sites offer flexibility and interactivity.  
 
-### Overview of Jekyll  
-**Jekyll** is a static site generator created by Tom Preston-Werner, co-founder of GitHub. It transforms Markdown, Liquid templates, and configuration files into a full static website. Jekyll is particularly popular because:  
-- It integrates seamlessly with GitHub Pages.  
-- It is customizable through themes, layouts, and plugins.  
-- It is lightweight and straightforward, suitable for developers and technical writers.  
-
 ### Real-world use cases  
 Jekyll is widely adopted in different contexts:  
 - **Blogs:** Markdown-based publishing makes writing and editing content easy.  
 - **Portfolios:** Designers and developers can present their work elegantly.  
 - **Documentation:** Many open-source projects use Jekyll to power their documentation.  
 - **Personal websites:** Users can quickly deploy a secure and maintainable site.
+
+### About this Course
+
+This course introduces you to the core structure of a Jekyll site and walks through how to configure, create, and style content. By the end, you’ll be able to set up a basic site, write posts and pages, and customize layouts with themes and templates.
