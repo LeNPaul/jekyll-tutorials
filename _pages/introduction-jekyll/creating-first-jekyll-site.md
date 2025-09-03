@@ -95,8 +95,8 @@ bundle exec jekyll serve
 
 By default, your site will be available at http://localhost:4000.
 
-### Understanding `_site`
+### Understanding `_site/`
 
-When you build or serve your project, Jekyll generates a `_site` folder. This is the compiled output—the HTML, CSS, and JS that will be deployed to the web server. You normally don’t edit files in `_site`, since it’s regenerated automatically every time you build.
+When you build or serve your project, Jekyll generates a `_site/` folder. This is the compiled output—the HTML, CSS, and JS that will be deployed to the web server. You normally don’t edit files in `_site/`, since it’s regenerated automatically every time you build.
 
 Congratulations! You’ve just set up your first Jekyll site and seen it running locally.

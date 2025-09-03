@@ -1,6 +1,6 @@
 ---
 permalink: /working-with-content
-title: "Configuration Basics"
+title: "Working with Content"
 ---
 
 ## Content Creation and Management
@@ -47,7 +47,7 @@ Jekyll converts Markdown into HTML automatically.
 
 - Pages – Standalone content like "About" or "Contact"
 
-- Drafts – Stored in `_drafts/` and not published until explicitly built
+- Drafts – Stored in `_drafts/` and not published until explicitly built with the `--drafts` flag or moved into `_posts/`
 
 - Future posts – Posts with future dates can be hidden until their time comes, unless you build with `--future`
 
