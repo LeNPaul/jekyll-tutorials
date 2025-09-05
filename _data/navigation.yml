@@ -1,9 +1,5 @@
 docs:
-  - title: Introduction
-    children:
-      - title: "Welcome"
-        url: /
-  - title: Getting Started with Jekyll
+  - title: Quick Start
     children:
       - title: "Introduction to Jekyll"
         url: /introduction-jekyll
