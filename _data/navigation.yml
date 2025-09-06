@@ -1,11 +1,5 @@
 docs:
-  - title: Quick Start
+  - title: Getting Started with Jekyll
     children:
       - title: "Introduction to Jekyll"
         url: /introduction-jekyll
-      - title: "Creating Your First Jekyll Site"
-        url: /creating-first-jekyll-site
-      - title: "Configuration Basics"
-        url: /configuration-basics
-      - title: "Working with Content"
-        url: /working-with-content

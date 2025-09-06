@@ -3,36 +3,86 @@ permalink: /introduction-jekyll
 title: "Introduction to Jekyll"
 ---
 
-### What is Jekyll?
-**Jekyll** is a static site generator created by Tom Preston-Werner, co-founder of GitHub. It transforms Markdown, Liquid templates, and configuration files into a full static website. Jekyll is particularly popular because:  
-- It integrates seamlessly with GitHub Pages.  
-- It is customizable through themes, layouts, and plugins.  
-- It is lightweight and straightforward, suitable for developers and technical writers.  
+## What is Jekyll?
 
-### What is a static site generator?  
-A **static site generator (SSG)** is a tool that converts plain text files (commonly written in Markdown) and templates into a complete static website composed of HTML, CSS, and JavaScript. Unlike dynamic content management systems (CMS) such as WordPress, which generate pages on demand using a database, static sites are pre-built and served directly to the browser.  
+### Overview of Jekyll
 
-### Advantages of static sites vs. dynamic sites (e.g., WordPress)  
-**Static sites:**  
-- **Speed:** Since pages are pre-rendered, they load much faster.  
-- **Security:** With no database or backend code running, attack surfaces are greatly reduced.  
-- **Cost efficiency:** Static sites can be hosted for free or very cheaply (e.g., GitHub Pages, Netlify).  
-- **Version control friendly:** Content is stored in text files, which integrate smoothly with Git.  
+Jekyll is a static site generator built written in Ruby. It takes your Markdown content, along with Liquid templates and configuration files, and turns it into a fully functioning static website. Unlike platforms like WordPress that rely on databases and server-side scripts, Jekyll generates simple HTML, CSS, and JavaScript files that can be hosted almost anywhere.
 
-**Dynamic sites (e.g., WordPress):**  
-- **Extensibility:** Plugins and themes provide a wide range of features.  
-- **Ease of use:** A graphical admin panel allows non-technical users to create content.  
-- **Database-driven:** Content is generated dynamically from a database when requested.  
+Created by Tom Preston-Werner (co-founder of GitHub), Jekyll powers GitHub Pages, which means you can host a site for free directly from a GitHub repository. This makes Jekyll especially popular for developers, writers, and creators who want a fast, low-maintenance, and cost-effective way to share content online.
 
-In summary, static sites provide speed, simplicity, and security, while dynamic sites offer flexibility and interactivity.  
+#### Key Features of Jekyll
 
-### Real-world use cases  
-Jekyll is widely adopted in different contexts:  
+- Markdown Support: Write posts and pages quickly without worrying about HTML tags.
+
+- Liquid Templates: Use a simple templating language to manage layouts, loops, and variables.
+
+- Themes and Plugins: Customize your site easily with community-built or custom themes and plugins.
+
+- GitHub Pages Integration: Deploy directly from a GitHub repository with minimal setup.
+
+#### Real-World Ideal Use Cases
+
+Jekyll works best for:
+
 - **Blogs:** Markdown-based publishing makes writing and editing content easy.  
+
 - **Portfolios:** Designers and developers can present their work elegantly.  
-- **Documentation:** Many open-source projects use Jekyll to power their documentation.  
+
+- **Documentation sites:** Many open-source projects use Jekyll to power their documentation.  
+
 - **Personal websites:** Users can quickly deploy a secure and maintainable site.
 
-### About this Course
+### How Websites Work
 
-This course introduces you to the core structure of a Jekyll site and walks through how to configure, create, and style content. By the end, you’ll be able to set up a basic site, write posts and pages, and customize layouts with themes and templates.
+#### HTML, CSS, JavaScript Basics
+
+At their core, websites are built from three main technologies:
+
+- HTML (HyperText Markup Language): The structure and content of a webpage (headings, paragraphs, links, images).
+
+- CSS (Cascading Style Sheets): The design and styling (fonts, colors, layout).
+
+- JavaScript: The behavior and interactivity (dropdown menus, sliders, dynamic updates).
+
+Every website you see online is powered by these three layers.
+
+### What is a Static Site Generator?
+
+A static site generator (SSG) automates the process of creating a website. Instead of writing raw HTML files for every page, you write your content in Markdown or another lightweight format, and the SSG (like Jekyll) compiles the plain text files into a complete static website composed of HTML, CSS, and JavaScript files. Templates, layouts, and reusable components keep your site consistent without repetitive coding. Unlike dynamic content management systems (CMS) such as WordPress, which generate pages on demand using a database, static sites are pre-built and served directly to the browser.
+
+### Advantages of Static Sites vs. Dynamic Sites
+
+Static sites (generated by Jekyll or similar tools):
+
+- Speed: Pages load quickly because they’re just prebuilt HTML files.
+
+- Security: No database or backend code, so fewer vulnerabilities.
+
+- Low cost: Can be hosted cheaply (or for free on GitHub Pages).
+
+- Simplicity: Less infrastructure to manage.
+
+Dynamic sites (like WordPress or Drupal):
+
+- Ease of use: Non-technical users can update content through a graphical user interface.
+
+- Extensibility: Large ecosystems of plugins and themes provide a wide range of features for added functionality.
+
+- Database-driven: Suitable for sites needing user accounts, comments, or e-commerce.
+
+In summary, static sites provide speed, simplicity, and security, while dynamic sites are better for feature-heavy applications.
+
+## About This Course
+
+This course will take you from zero to a fully working Jekyll site:
+
+- How to install Jekyll and set up your development environment.
+
+- The anatomy of a Jekyll project and how to customize it.
+
+- How to create content with Markdown, posts, and pages.
+
+- How to deploy your Jekyll site to GitHub Pages or other hosting platforms.
+
+By the end, you’ll be able to set up a basic Jekyll site, write posts and pages, and deploy to a hosting platform.
