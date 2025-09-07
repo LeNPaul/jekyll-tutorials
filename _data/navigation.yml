@@ -3,3 +3,5 @@ docs:
     children:
       - title: "Introduction to Jekyll"
         url: /introduction-jekyll
+      - title: "Create Your First Jekyll Site"
+        url: /create-first-jekyll-site

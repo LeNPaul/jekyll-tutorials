@@ -33,9 +33,9 @@ Jekyll works best for:
 
 - **Personal websites:** Users can quickly deploy a secure and maintainable site.
 
-### How Websites Work
+## How Websites Work
 
-#### HTML, CSS, JavaScript Basics
+### HTML, CSS, JavaScript Basics
 
 At their core, websites are built from three main technologies:
 
