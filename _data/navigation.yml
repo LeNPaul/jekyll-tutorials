@@ -5,3 +5,5 @@ docs:
         url: /introduction-jekyll
       - title: "Create Your First Jekyll Site"
         url: /create-first-jekyll-site
+      - title: "Jekyll Configuration Basics"
+        url: /jekyll-configuration-basics
