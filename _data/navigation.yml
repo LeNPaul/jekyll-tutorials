@@ -7,3 +7,5 @@ docs:
         url: /create-first-jekyll-site
       - title: "Jekyll Configuration Basics"
         url: /jekyll-configuration-basics
+      - title: "Content Creation and Management in Jekyll"
+        url: /content-creation-management-jekyll
