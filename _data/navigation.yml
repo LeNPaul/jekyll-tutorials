@@ -9,3 +9,5 @@ docs:
         url: /jekyll-configuration-basics
       - title: "Content Creation and Management in Jekyll"
         url: /content-creation-management-jekyll
+      - title: "Using Jekyll Themes"
+        url: /using-jekyll-themes
