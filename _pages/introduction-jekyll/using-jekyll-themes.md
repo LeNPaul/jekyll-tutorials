@@ -36,3 +36,13 @@ You have two primary ways to use themes:
 2. Remote theme (pulled from a GitHub repo at build time)
 
 Choose one approach per project (don’t set both `theme:` and `remote_theme:` at the same time).
+
+### Switch to a Gem-Based Theme
+
+1. Find and install the theme gem: in your project’s `Gemfile`, add (or replace Minima with) another theme gem, e.g. `gem "jekyll-theme`
+
+2. Then install with `bundle install`
+
+3. Point Jekyll at the new theme: in `_config.yml`, set `theme: jekyll-theme`
+
+4. Run the site with `bundle exec jekyll serve`
