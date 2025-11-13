@@ -19,7 +19,7 @@ Jekyll themes let you change your site’s look, layout, and basic UX without re
 
 ## The Default Jekyll Theme
 
-When you run `jekyll new mysite`, Jekyll’s starter site uses the Minima theme by default. You’ll see this in two places:
+When you run `jekyll new mysite`, Jekyll’s starter site uses [the Minima theme](https://jekyll.github.io/minima/) by default. You’ll see this in two places:
 
 1. **Gemfile:** includes gem "minima"
 
@@ -37,12 +37,72 @@ You have two primary ways to use themes:
 
 Choose one approach per project (don’t set both `theme:` and `remote_theme:` at the same time).
 
-### Switch to a Gem-Based Theme
+### Using a Gem-Based Theme
 
-1. Find and install the theme gem: in your project’s `Gemfile`, add (or replace Minima with) another theme gem, e.g. `gem "jekyll-theme`
+1. Find and install the theme gem: in your project’s `Gemfile`, add (or replace Minima with) another theme gem, for example:
 
-2. Then install with `bundle install`
+    ```yaml
+    gem "jekyll-theme"
+    ```
 
-3. Point Jekyll at the new theme: in `_config.yml`, set `theme: jekyll-theme`
+2. Install with `bundle install`
+
+3. Point Jekyll at the new theme in `_config.yml`:
+
+    ```yaml
+    theme: jekyll-theme
+    ```
 
 4. Run the site with `bundle exec jekyll serve`
+
+### Using a Remote Theme
+
+1. Add the plugin in your `Gemfile`:
+
+    ```yaml
+    gem "jekyll-remote-theme"
+    ```
+
+2. Enable and configure in `_config.yml` (remove any `theme:` line to avoid conflicts):
+
+    ```yaml
+    plugins:
+    - jekyll-remote-theme
+
+    # Replace with the owner/repo of the theme you want:
+    remote_theme: owner/theme-repo
+    ```
+
+3. Serve locally with `bundle exec jekyll serve`
+
+## Common Customizations
+
+- Override index.md/html or _layouts/home.html to customize the home page.
+
+- Site navigation can be customeized on many themes—check your theme’s docs.
+
+- Social icons & metadata are often configured via `_config.yml` keys (e.g., twitter_username, github_username).
+
+## Troubleshooting Tips
+
+- “Theme could not be found”
+
+    - For gem themes, ensure it’s in your `Gemfile` and run `bundle install`.
+
+    - For remote themes, verify:
+    
+        ```yaml
+        plugins: 
+        - jekyll-remote-theme 
+        
+        # Point to a public owner/repo.
+        remote_theme: owner/theme-repo
+        ```
+
+- Conflicting settings: use either `theme:` (gem) or `remote_theme:` (GitHub repo), not both.
+
+- Assets not loading: check your `baseurl` and `url` in `_config.yml`, especially when viewing under a subpath (e.g., GitHub Pages project sites).
+
+- Sass not compiling: make sure your Sass file has front matter (`---`on the first two lines) so Jekyll processes it.
+
+- Locked versions on GitHub Pages: if using `github-pages`, your gem versions are pinned—use `remote_theme` to use the latest upstream theme.
