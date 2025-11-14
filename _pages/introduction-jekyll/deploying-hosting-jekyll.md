@@ -41,7 +41,7 @@ When serving static files, a static host will:
 
 - Send requested files to the browser (e.g., `index.html`)
 
-## Deploying Jekyll to GitHub Pages
+## Common Ways to Host a Jekyll Site
 
 Because Jekyll sites are static, you have many hosting choices. GitHub Pages is the simplest and most popular hosting option for Jekyll—especially for beginners:
 
@@ -54,3 +54,105 @@ Because Jekyll sites are static, you have many hosting choices. GitHub Pages is 
 - Comes with a default domain: username.github.io
 
 GitHub can automatically build your site whenever you push code to your repository.
+
+## Deploying Jekyll to GitHub Pages
+
+### Installing Git
+
+Before deploying, make sure Git is installed on your system:
+
+- macOS
+
+    - Git usually comes pre-installed. Check with:
+
+        ```bash
+        git --version
+        ```
+
+    - If not installed, install via Homebrew:
+
+        ```bash
+        brew install git
+        ```
+
+- Ubuntu/Debian Linux
+
+    ```bash
+    sudo apt update
+    sudo apt install git
+    ```
+
+- Windows
+
+    - Install Git for Windows: https://git-scm.com/download/win
+
+### Setting Up Your GitHub Account and Repository
+
+1. Create a GitHub Account
+
+    - If you don’t already have one: https://github.com/join
+
+2. Create a New Repository for Your Site
+
+    1. Log in to GitHub
+
+    2. Click New Repository
+
+    3. Name it:
+
+        - For a personal site: username.github.io
+
+        - For any other site: any name is fine
+
+    4. Choose Public
+
+    5. Click Create Repository
+
+3. Initialize Git Locally
+
+    - Navigate to your Jekyll project folder:
+
+        ```bash
+        git init
+        git add .
+        git commit -m "Initial Jekyll site"
+        ```
+
+4. Connect Local Folder to GitHub
+
+    - GitHub provides a remote URL—copy it and run:
+
+        ```bash
+        git remote add origin https://github.com/<username>/<repo>.git
+        git push -u origin main
+        ```
+
+### Setting Up Your Jekyll Site to Run on GitHub Pages
+
+There are two ways to host with GitHub Pages:
+
+#### Option A: GitHub Builds Jekyll for You (Recommended for Beginners)
+
+GitHub supports a limited set of plugins but automatically builds Jekyll.
+
+Steps:
+
+1. Go to your repository settings
+
+2. Click Pages
+
+3. Under Source, choose:
+
+    - GitHub Actions (new recommended way)
+
+4. GitHub will auto-create a workflow to build your site
+
+#### Option B: Build Locally and Upload Static Files Yourself
+
+If you need plugins GitHub doesn’t support:
+
+1. Build site locally with `bundle exec jekyll build`
+
+2. Push only the `_site` folder to a branch like gh-pages
+
+3. Configure GitHub Pages to serve that branch
